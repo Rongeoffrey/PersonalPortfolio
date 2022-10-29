@@ -1,9 +1,9 @@
 
 @import "./resetsheet";
 
-$primaryColor : black;
-$secondaryColor : #FF9F29;
-$tertiaryColor : white; 
+$primaryColor : #0b0c10;
+$secondaryColor : #66FCF1;
+$tertiaryColor : #c5c6c7; 
 
 body{
     background-image: url(./images/city.avif);
@@ -20,6 +20,7 @@ body{
 header{
     position: sticky;
     top: 0;
+    z-index: 100;
     background: rgba( 11, 11, 11, 0.7 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 9.5px );
@@ -59,30 +60,30 @@ header{
             font-family: 'Roboto Mono';
             font-size: 12px;
             letter-spacing: 1px;
-        }
-
-        li{
-            list-style: none;
-            padding: 0px 19px 0px;
-            &::-ms-ticks-after{
-                content: '';
-                display: block;
-                width: 0;
-                height: 1px;
-                background: $secondaryColor;
-                transition: width .3s;
+            li{
+                list-style: none;
+                padding: 0px 19px 0px;
+                a{
+                    color: $tertiaryColor;
+                    &:hover{
+                        color: $tertiaryColor;
+                    }
+                    &::after{
+                        content: '';
+                        display: block;
+                        width: 0;
+                        height: 1px;
+                        background: $secondaryColor;
+                        color: $tertiaryColor;
+                        transition: width .5s;
+                    }
+                    &:hover::after{
+                        width: 100%;
+                    }
+                }
             }
-
-            &:hover::after{
-                width: 100%;
-            }
-        }
-
-        a{
-            color: $tertiaryColor;
         }
     }
-
     .header_icons{
         display: none;
     }
@@ -108,7 +109,7 @@ header{
     .btn-1{
         width: 160px;
         height: 65px;
-        background-color: $secondaryColor;
+        border: 3px solid $secondaryColor;
         border-radius: 3px;
         margin: auto;
         text-align: center;
@@ -121,7 +122,7 @@ header{
         a{
             font-family: 'Roboto';
             font-weight: bold;
-            color: $primaryColor;
+            color: $secondaryColor;
             font-size: 18px;
             text-transform: uppercase;
             &:hover{

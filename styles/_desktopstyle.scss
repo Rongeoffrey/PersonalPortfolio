@@ -1,7 +1,7 @@
 
-$primaryColor : black;
-$secondaryColor : #FF9F29;
-$tertiaryColor : white; 
+$primaryColor : #0b0c10;
+$secondaryColor : #66FCF1;
+$tertiaryColor : #c5c6c7; 
 
 
 @media only screen and (min-width: 1000px){ /* DESKTOP */
@@ -35,35 +35,26 @@ $tertiaryColor : white;
                         }
                     }
                 }
-                .header_icons{
+                /*.header_icons{
                     padding-top: 2px;
                     display: flex;
-                    span::after{
-                        content: '';
-                        display: block;
-                        width: 0;
-                        height: 1px;
-                        background: $secondaryColor;
-                        transition: width .3s;
-                    }
-                    .header_icons span:hover::after{
-                        width: 100%;
-                    }
-                    .header_icons span a{
-                        color: $secondaryColor;
-                    }
-                    
+                }
+                .header_icons span:hover::after{
+                    width: 100%;
+                }
+                .header_icons span a{
+                    color: $secondaryColor;
                     #home-icon{
                         font-size: 17px;
                         padding-right: 2px;
                     }
-                    
                     #link-icon{
                         font-size: 17px;
                     }
-                }
-            }
+                }*/
+            }   
         }
+
     /* MAIN */
         .blank_div{
             height: 697px;
@@ -109,7 +100,6 @@ $tertiaryColor : white;
             height: 100vh;
             width: 100%;
             background-color: $secondaryColor;
-            color: wheat;
         }
         
         #contact{
@@ -181,4 +171,6 @@ $tertiaryColor : white;
                 }
             }
         }
-}
+    
+}   
+
