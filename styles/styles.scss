@@ -187,10 +187,40 @@ header{
     }
 }
 
-#programs{
+#skills{
     width: 100%;
     height: 895px;
     background-color: $secondaryColor;
+    padding: 70px 0px 0px;
+    .skills_container{
+        height: 670px;
+        width: 85%;
+        margin: auto;
+        .first_skill, .second_skill, .third_skill{
+            height: 230px;
+            width: auto;
+            background-color: $primaryColor;
+            margin-bottom: 30px;
+            border-radius: 20px;
+            padding: 0px 10px 0px;
+            h2{
+                font-family: 'Roboto Condensed';
+                font-size: 30px;
+                text-align: center;
+                padding-top: 30px;
+                color: $tertiaryColor;
+            }
+            p{
+                font-family: 'Roboto Mono';
+                font-size: 15px;
+                text-align: center;
+                padding-top: 20px;
+                color: $tertiaryColor;
+                letter-spacing: 2px;
+                line-height: 18px;  
+            }
+        }
+    }
 }
 
 #contact{

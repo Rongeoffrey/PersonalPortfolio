@@ -273,10 +273,40 @@ header .header_icons {
   padding: 0px 5px 0px;
 }
 
-#programs {
+#skills {
   width: 100%;
   height: 895px;
   background-color: #66FCF1;
+  padding: 70px 0px 0px;
+}
+#skills .skills_container {
+  height: 670px;
+  width: 85%;
+  margin: auto;
+}
+#skills .skills_container .first_skill, #skills .skills_container .second_skill, #skills .skills_container .third_skill {
+  height: 230px;
+  width: auto;
+  background-color: #0b0c10;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  padding: 0px 10px 0px;
+}
+#skills .skills_container .first_skill h2, #skills .skills_container .second_skill h2, #skills .skills_container .third_skill h2 {
+  font-family: "Roboto Condensed";
+  font-size: 30px;
+  text-align: center;
+  padding-top: 30px;
+  color: #c5c6c7;
+}
+#skills .skills_container .first_skill p, #skills .skills_container .second_skill p, #skills .skills_container .third_skill p {
+  font-family: "Roboto Mono";
+  font-size: 15px;
+  text-align: center;
+  padding-top: 20px;
+  color: #c5c6c7;
+  letter-spacing: 2px;
+  line-height: 18px;
 }
 
 #contact {
@@ -507,23 +537,6 @@ footer .footer_thirddiv p {
   }
   header .header_right {
     display: flex;
-    /*.header_icons{
-        padding-top: 2px;
-        display: flex;
-    }
-    .header_icons span:hover::after{
-        width: 100%;
-    }
-    .header_icons span a{
-        color: $secondaryColor;
-        #home-icon{
-            font-size: 17px;
-            padding-right: 2px;
-        }
-        #link-icon{
-            font-size: 17px;
-        }
-    }*/
   }
   header .header_right .header_buttons {
     padding: 0px;
@@ -556,8 +569,9 @@ footer .footer_thirddiv p {
   }
   #about .about_picture {
     background-image: url(./images/about_pic.png);
-    border-radius: 50%;
-    border: 3px solid #66FCF1;
+    border: none;
+    -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+            clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
     background-size: cover;
     width: 280px;
     height: 280px;
@@ -575,10 +589,39 @@ footer .footer_thirddiv p {
     font-size: 14px;
     padding: 0px 300px 0px 5px;
   }
-  #programs {
+  #skills {
     height: 100vh;
-    width: 100%;
-    background-color: #66FCF1;
+  }
+  #skills .skills_container {
+    display: flex;
+    padding-top: 100px;
+  }
+  #skills .skills_container .first_skill, #skills .skills_container .second_skill, #skills .skills_container .third_skill {
+    height: 400px;
+    width: 80%;
+    margin: 0px 10px 0px 10px;
+    padding-top: 100px;
+  }
+  #skills .skills_container .first_skill h2, #skills .skills_container .second_skill h2, #skills .skills_container .third_skill h2 {
+    padding-top: 0px;
+  }
+  #skills .skills_container .first_skill p, #skills .skills_container .second_skill p, #skills .skills_container .third_skill p {
+    padding-top: 20px;
+  }
+  #skills .skills_container .icon1, #skills .skills_container .icon2, #skills .skills_container .icon3 {
+    height: 130px;
+    width: 200px;
+    background-image: url(./images/htmlcss.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: auto;
+  }
+  #skills .skills_container .icon2 {
+    background-image: url(./images/js.png);
+  }
+  #skills .skills_container .icon3 {
+    background-image: url(./images/git.png);
+    padding: 20px 0px 10px 0px;
   }
   #contact {
     width: 100%;

@@ -35,23 +35,6 @@ $tertiaryColor : #c5c6c7;
                         }
                     }
                 }
-                /*.header_icons{
-                    padding-top: 2px;
-                    display: flex;
-                }
-                .header_icons span:hover::after{
-                    width: 100%;
-                }
-                .header_icons span a{
-                    color: $secondaryColor;
-                    #home-icon{
-                        font-size: 17px;
-                        padding-right: 2px;
-                    }
-                    #link-icon{
-                        font-size: 17px;
-                    }
-                }*/
             }   
         }
 
@@ -75,8 +58,8 @@ $tertiaryColor : #c5c6c7;
             padding-top: 100px;
             .about_picture{
                 background-image: url(./images/about_pic.png);
-                border-radius: 50%;
-                border: 3px solid $secondaryColor;
+                border: none;
+                clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
                 background-size: cover;
                 width: 280px;
                 height: 280px;
@@ -96,10 +79,39 @@ $tertiaryColor : #c5c6c7;
             }
         }
         
-        #programs{
+        #skills{
             height: 100vh;
-            width: 100%;
-            background-color: $secondaryColor;
+            .skills_container{
+                display: flex;
+                padding-top: 100px;
+                .first_skill, .second_skill, .third_skill{
+                    height: 400px;
+                    width: 80%;
+                    margin: 0px 10px 0px 10px;
+                    padding-top: 100px;
+                    h2{
+                        padding-top: 0px;
+                    }
+                    p{
+                        padding-top: 20px;
+                    }
+                }
+                .icon1, .icon2, .icon3{
+                    height: 130px;
+                    width: 200px;
+                    background-image: url(./images/htmlcss.png);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    margin: auto;
+                }
+                .icon2{
+                    background-image: url(./images/js.png);
+                }
+                .icon3{
+                    background-image: url(./images/git.png);
+                    padding: 20px 0px 10px 0px;
+                }
+            }
         }
         
         #contact{
