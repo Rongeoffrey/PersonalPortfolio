@@ -1,0 +1,184 @@
+
+$primaryColor : black;
+$secondaryColor : #FF9F29;
+$tertiaryColor : white; 
+
+
+@media only screen and (min-width: 1000px){ /* DESKTOP */
+    body{
+        background: url(images/city.avif);
+        background-size: 1345px 648px;
+        width: 100%;
+        background-attachment: fixed;
+        background-size: contain;
+    }
+    /*HEADER*/
+        header{
+            height: 50px;
+            width: inherit;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 100px 0 120px;
+            .header_brand{
+                padding: 0px;
+            }
+            .header_right{
+                display: flex;
+                .header_buttons{
+                    padding: 0px;
+                    ul{
+                        padding-right: 30px;
+                        padding-top: 4px;
+                        li{
+                            padding: 0px 10px 0px;
+                        }
+                    }
+                }
+                .header_icons{
+                    padding-top: 2px;
+                    display: flex;
+                    span::after{
+                        content: '';
+                        display: block;
+                        width: 0;
+                        height: 1px;
+                        background: $secondaryColor;
+                        transition: width .3s;
+                    }
+                    .header_icons span:hover::after{
+                        width: 100%;
+                    }
+                    .header_icons span a{
+                        color: $secondaryColor;
+                    }
+                    
+                    #home-icon{
+                        font-size: 17px;
+                        padding-right: 2px;
+                    }
+                    
+                    #link-icon{
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    /* MAIN */
+        .blank_div{
+            height: 697px;
+            border-top: 1px solid $secondaryColor;
+            border-bottom: 1px solid $secondaryColor;
+            .blank_div1{
+                padding: 80px 280px 70px;
+                h1{
+                    font-size: 80px;
+                    line-height: 100px;
+                }
+            }
+        }
+        #about{
+            width: 100%;
+            height: 100vh;
+            background-color: $primaryColor;
+            padding-top: 100px;
+            .about_picture{
+                background-image: url(./images/about_pic.png);
+                border-radius: 50%;
+                border: 3px solid $secondaryColor;
+                background-size: cover;
+                width: 280px;
+                height: 280px;
+                margin: auto;
+            }
+            .about_description{
+                padding-left: 400px;
+                h2{
+                    padding: 70px 0px 25px 25px;
+                    font-size: 25px;
+                    letter-spacing: 3px;
+                }
+                p{
+                    font-size: 14px;
+                    padding: 0px 300px 0px 5px;
+                }
+            }
+        }
+        
+        #programs{
+            height: 100vh;
+            width: 100%;
+            background-color: $secondaryColor;
+            color: wheat;
+        }
+        
+        #contact{
+            width: 100%;
+            height: 100vh;
+            background-color: $primaryColor;
+            display: flex;
+            .contact_description{
+                padding: 20px 100px 10px 50px;
+                margin-top: 100px;
+                margin-bottom: 50px;
+                margin-right: 120px;
+                border-right: 1px solid $secondaryColor;
+                h2{
+                    padding: 70px 0px 25px 25px;
+                }
+                p{
+                    padding: 0px 5px 10px;
+                }
+                .contact_icon{
+                    border-bottom: none;
+                    padding-top: 15px;
+                    p{
+                        font-size: 14px;
+                        padding-left: 12px;
+                    }
+                }
+            }
+            .contact_form{
+                padding: 78px 200px 0px 0px;
+            }
+        }
+    
+    /* FOOTER */
+        footer{
+            .footer_brand{
+                margin: 0px 200px 0px;
+            }
+            .footer_seconddiv{
+                margin: 0px 200px 0px;
+                ul{
+                    li{
+                        color: $secondaryColor;
+                        &::after{
+                            content: '';
+                            display: block;
+                            width: 0;
+                            height: 1px;
+                            background: $secondaryColor;
+                            transition: width .3s;
+                        }
+                        &:hover::after{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            .footer_thirddiv{
+                .social{
+                    display:flex;
+                    justify-content: center;
+                    h5{
+                        padding-right: 690px;
+                    }
+                }
+                .copyright{
+                    text-align: left;
+                    padding-left: 220px;
+                }
+            }
+        }
+}
