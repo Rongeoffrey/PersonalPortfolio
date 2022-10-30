@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap");
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -97,6 +100,12 @@ input, select {
   text-decoration: none;
 }
 
+/* IMPORTED FONTS */
+/* 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
+*/
 body {
   background-image: url(./images/city.avif);
   background-repeat: no-repeat;
@@ -298,6 +307,7 @@ header .header_icons {
   text-align: center;
   padding-top: 30px;
   color: #c5c6c7;
+  letter-spacing: 2px;
 }
 #skills .skills_container .first_skill p, #skills .skills_container .second_skill p, #skills .skills_container .third_skill p {
   font-family: "Roboto Mono";
@@ -560,6 +570,27 @@ footer .footer_thirddiv p {
   .blank_div .blank_div1 h1 {
     font-size: 80px;
     line-height: 100px;
+  }
+  .blank_div #scrollBtn {
+    display: none;
+    position: fixed;
+    font-size: 15px;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: 1px solid #0b0c10;
+    outline: none;
+    color: #0b0c10;
+    background-color: #66FCF1;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  .blank_div #scrollBtn:hover {
+    background-color: #0b0c10;
+    color: #66FCF1;
+    border: 1px solid #66FCF1;
+    transition: background-color 0.5s ease-out;
   }
   #about {
     width: 100%;

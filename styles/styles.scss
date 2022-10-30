@@ -1,5 +1,6 @@
 
 @import "./resetsheet";
+@import "./fontsheet";
 
 $primaryColor : #0b0c10;
 $secondaryColor : #66FCF1;
@@ -209,6 +210,7 @@ header{
                 text-align: center;
                 padding-top: 30px;
                 color: $tertiaryColor;
+                letter-spacing: 2px;
             }
             p{
                 font-family: 'Roboto Mono';
